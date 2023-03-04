@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - WebSite Building</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="./dev/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dev/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./dev/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.min.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
 </head>
-<body>
+
+<body class="dark-mode">
+
+   <div id="cookiePopup">
+  <h4>MESAJ</h4>
+  <p>BINE AI VENIT!😃</p>
+ <button id="acceptCookie">Accept</button> 
+   </div>
+
     <!-- START Section Navbar -->
-    <div class="p-5 bg-warning">
+    <div class="p-5 bg-warning" id="gradient">
         <h1>Demo Header</h1>
+
     </div>
     <nav id="navbar_top" class="navbar  navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
@@ -21,6 +41,7 @@
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="sec-home" class="nav-item nav-link active">Acasa</a>
@@ -28,13 +49,21 @@
                     <a href="#sec-contact" class="nav-item nav-link">Contact</a>
 
                 </div>
+                <button onclick="myFunction()">💡</button>
+                <button class="g-recaptcha" 
+                data-sitekey="reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>
                 <div class="navbar-nav ms-auto">
                     <a href="#" class="nav-item nav-link">Login</a>
                 </div>
+
             </div>
+
         </div>
+
     </nav>
-   
+
 
     <!-- STOP Section Navbar -->
 
@@ -91,39 +120,155 @@
     <!--START Section About  -->
     <section id="sec-about">
         <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis deserunt laborum nam veritatis officia nisi illo qui aliquid sapiente cum et quibusdam provident, animi asperiores veniam natus inventore. Perferendis?</p>
-            <p>Obcaecati, quasi culpa quod asperiores tempora repellendus quas, laboriosam saepe molestiae nobis, totam dignissimos quos eum aperiam voluptas maiores minima modi cum maxime animi consectetur adipisci! Eum eos ut amet.</p>
-            <p>Nam, fugit consectetur. Sint aut sunt dolorum veritatis ex nulla minima similique voluptatibus saepe non quae itaque voluptatem porro odit quidem cupiditate voluptate, qui quia nemo libero dignissimos nostrum reiciendis!</p>
-            <p>Iure laudantium nihil incidunt natus quaerat nam. Deserunt, consequuntur? Voluptas placeat quae totam omnis ullam ad eligendi, pariatur autem similique, culpa vel? Nulla culpa omnis doloremque tempora maxime, alias sit.</p>
-            <p>Facilis tenetur provident iusto fuga sunt iure harum asperiores ipsum quasi assumenda esse doloremque, optio sequi nisi culpa. Eius sapiente veritatis recusandae nam voluptatum perspiciatis incidunt cum velit corrupti aliquid.</p>
-            <p>Nostrum totam excepturi porro. Deserunt est aut, voluptatibus non repudiandae velit incidunt magnam dolorem aliquam deleniti mollitia quisquam, voluptates sed maiores sequi, quidem perspiciatis nisi iste pariatur id numquam excepturi!</p>
-            <p>Ipsam minus quibusdam nesciunt qui provident aliquid fugit. Dolorem aspernatur, alias consequuntur laborum, ab ad ipsam rem quod tempore dolorum voluptatum qui mollitia modi. Corrupti fuga dicta explicabo accusantium laboriosam!</p>
-            <p>Aperiam laborum, harum eveniet dolor eius cumque nemo assumenda rem nesciunt enim animi optio repellat quisquam provident quos, reiciendis perferendis! Rem vero fuga architecto unde repellat quaerat veritatis amet odio.</p>
-            <p>Quibusdam commodi unde ad ab harum in minima aspernatur sunt minus! Sed, totam, nesciunt quidem assumenda et libero pariatur id error doloribus sint voluptatibus ullam temporibus omnis velit corrupti quas.</p>
-            <p>Reprehenderit vero expedita, quod inventore vitae totam, neque architecto ex incidunt repellat recusandae odit ea adipisci eius autem quia ducimus aperiam, quidem possimus non. Praesentium in cum quibusdam numquam aut?</p>
-            <p>Et a ipsam tempore impedit, deserunt repellat aliquam ut nostrum, nobis eius cupiditate qui soluta sequi, quod iusto eum explicabo minus! Architecto, tempore accusantium delectus fugiat explicabo reiciendis ab reprehenderit!</p>
-            <p>Animi ipsa temporibus repudiandae est nesciunt necessitatibus, repellendus architecto earum aut ducimus facilis, quas quia, eaque quibusdam perferendis provident quos tenetur soluta? Deserunt tempora dolore delectus quisquam cupiditate voluptas earum?</p>
-            <p>Amet tenetur accusamus provident libero nobis pariatur suscipit repellat voluptate inventore unde quis officia voluptatum officiis praesentium, distinctio, eligendi earum expedita nemo quod corrupti maxime quisquam odio rerum? Modi, quo.</p>
-            <p>Fugiat, expedita cum eligendi numquam dolore veritatis? Fuga odit eius delectus error similique alias doloribus, eum, fugit asperiores, harum aut sit beatae ad voluptas! Necessitatibus nam quas vel corrupti alias?</p>
-            <p>Reprehenderit reiciendis expedita quo aliquam. Ipsa amet ab optio laborum voluptate, doloribus similique soluta architecto cupiditate sunt sint eos delectus fugiat, dolorum nihil, quod nesciunt pariatur? Itaque illum ad odit.</p>
-            <p>Explicabo optio odit aut, quasi commodi voluptatum ut quia totam obcaecati voluptas reprehenderit placeat maxime eveniet! Sit rerum voluptate quo in fuga minus. Magni accusamus quasi officia quo explicabo tempore.</p>
-            <p>Consequatur corporis modi quam repellendus ut perferendis perspiciatis rerum sint pariatur excepturi quae tempora natus expedita molestias dolor quos architecto vero, veritatis tempore mollitia unde consequuntur esse laboriosam! Aliquam, ullam.</p>
-            <p>Consequuntur quos facilis iure unde reiciendis? Ullam sapiente omnis incidunt a vero rem dolore enim pariatur labore. Illum sint quia, sapiente dolor cum nulla nam, asperiores amet quam blanditiis itaque.</p>
-            <p>Veniam soluta ipsa nesciunt doloribus iusto aspernatur nam fugit quisquam dolor consectetur animi delectus laboriosam harum, nemo dolores cumque inventore est. Nobis omnis assumenda, commodi explicabo facere accusamus ad unde?</p>
-            <p>Dolorum molestiae, non obcaecati magni qui similique commodi fuga delectus repudiandae voluptatibus placeat! Mollitia doloremque recusandae eum, eveniet iure eius quaerat earum et amet maiores, fugiat dolore adipisci assumenda exercitationem.</p>
-            <p>Perferendis recusandae eos aut fugit illo, quibusdam incidunt veniam rerum voluptate numquam molestiae totam pariatur, dignissimos possimus aliquid delectus blanditiis sed aspernatur a ipsum cupiditate. Architecto iste odit sunt hic!</p>
-            <p>Ex asperiores excepturi, eum recusandae similique vero? Modi delectus adipisci iure fuga? Earum delectus consequuntur odio possimus mollitia eos facilis aliquam consequatur voluptate dolorem velit, quam minus ea id? Architecto!</p>
-            <p>Corrupti voluptatem consequatur sed iste tenetur neque molestiae mollitia ad dolore quisquam laboriosam, explicabo dolorum, eos repudiandae, molestias est in quia et? Odio doloribus nam id, nemo ut eaque eius.</p>
-            <p>Sint iure explicabo, dolores non aperiam provident beatae deleniti earum, quasi nesciunt repellat! Tenetur ut similique id adipisci, quia sequi pariatur dolorum animi mollitia, ipsa ipsam. Excepturi facere optio doloribus!</p>
-            <p>Minima, expedita. Deleniti perferendis voluptatum, aspernatur, alias ducimus nam officiis ipsum saepe similique optio adipisci, at ut asperiores nesciunt cumque minima et ipsa ad exercitationem. Assumenda libero suscipit ut fugit?</p>
-            <p>Explicabo, fugit quos molestiae officiis voluptatem eos! Laudantium vitae, explicabo eius neque obcaecati amet aliquid voluptatibus fuga repellendus asperiores natus cumque, eveniet modi, commodi aut! Soluta maiores saepe repellat molestias.</p>
-            <p>Aspernatur rerum voluptatem aliquam? Nam eveniet, temporibus quos corrupti perferendis nostrum quam aliquid voluptates soluta enim quidem quia culpa voluptatum ut! Odit id cum libero incidunt ad maxime, saepe molestias!</p>
-            <p>Mollitia voluptates, doloremque cumque odio veniam, consectetur cupiditate modi dignissimos rerum perspiciatis quos saepe excepturi, nesciunt quod vel neque porro officia aspernatur soluta nihil vero temporibus quibusdam nulla doloribus! Magni.</p>
-            <p>Repudiandae et qui sunt ex, rerum placeat quae? Ducimus officiis est nisi commodi consequuntur provident quidem nam ullam debitis officia perspiciatis quasi voluptates unde, eum ipsum impedit! Modi, itaque fugit?</p>
-            <p>Ex nostrum quo repellendus nisi quisquam aperiam officia numquam aliquid esse quibusdam eos eveniet, illo impedit iure consequatur modi aut dicta ullam amet excepturi sunt corporis quas. Mollitia, natus ratione?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis deserunt laborum nam veritatis
+                officia nisi illo qui aliquid sapiente cum et quibusdam provident, animi asperiores veniam natus
+                inventore. Perferendis?</p>
+            <p>Obcaecati, quasi culpa quod asperiores tempora repellendus quas, laboriosam saepe molestiae nobis, totam
+                dignissimos quos eum aperiam voluptas maiores minima modi cum maxime animi consectetur adipisci! Eum eos
+                ut amet.</p>
+            <p>Nam, fugit consectetur. Sint aut sunt dolorum veritatis ex nulla minima similique voluptatibus saepe non
+                quae itaque voluptatem porro odit quidem cupiditate voluptate, qui quia nemo libero dignissimos nostrum
+                reiciendis!</p>
+            <p>Iure laudantium nihil incidunt natus quaerat nam. Deserunt, consequuntur? Voluptas placeat quae totam
+                omnis ullam ad eligendi, pariatur autem similique, culpa vel? Nulla culpa omnis doloremque tempora
+                maxime, alias sit.</p>
+            <p>Facilis tenetur provident iusto fuga sunt iure harum asperiores ipsum quasi assumenda esse doloremque,
+                optio sequi nisi culpa. Eius sapiente veritatis recusandae nam voluptatum perspiciatis incidunt cum
+                velit corrupti aliquid.</p>
+            <p>Nostrum totam excepturi porro. Deserunt est aut, voluptatibus non repudiandae velit incidunt magnam
+                dolorem aliquam deleniti mollitia quisquam, voluptates sed maiores sequi, quidem perspiciatis nisi iste
+                pariatur id numquam excepturi!</p>
+            <p>Ipsam minus quibusdam nesciunt qui provident aliquid fugit. Dolorem aspernatur, alias consequuntur
+                laborum, ab ad ipsam rem quod tempore dolorum voluptatum qui mollitia modi. Corrupti fuga dicta
+                explicabo accusantium laboriosam!</p>
+            <p>Aperiam laborum, harum eveniet dolor eius cumque nemo assumenda rem nesciunt enim animi optio repellat
+                quisquam provident quos, reiciendis perferendis! Rem vero fuga architecto unde repellat quaerat
+                veritatis amet odio.</p>
+            <p>Quibusdam commodi unde ad ab harum in minima aspernatur sunt minus! Sed, totam, nesciunt quidem assumenda
+                et libero pariatur id error doloribus sint voluptatibus ullam temporibus omnis velit corrupti quas.</p>
+            <p>Reprehenderit vero expedita, quod inventore vitae totam, neque architecto ex incidunt repellat recusandae
+                odit ea adipisci eius autem quia ducimus aperiam, quidem possimus non. Praesentium in cum quibusdam
+                numquam aut?</p>
+            <p>Et a ipsam tempore impedit, deserunt repellat aliquam ut nostrum, nobis eius cupiditate qui soluta sequi,
+                quod iusto eum explicabo minus! Architecto, tempore accusantium delectus fugiat explicabo reiciendis ab
+                reprehenderit!</p>
+            <p>Animi ipsa temporibus repudiandae est nesciunt necessitatibus, repellendus architecto earum aut ducimus
+                facilis, quas quia, eaque quibusdam perferendis provident quos tenetur soluta? Deserunt tempora dolore
+                delectus quisquam cupiditate voluptas earum?</p>
+            <p>Amet tenetur accusamus provident libero nobis pariatur suscipit repellat voluptate inventore unde quis
+                officia voluptatum officiis praesentium, distinctio, eligendi earum expedita nemo quod corrupti maxime
+                quisquam odio rerum? Modi, quo.</p>
+            <p>Fugiat, expedita cum eligendi numquam dolore veritatis? Fuga odit eius delectus error similique alias
+                doloribus, eum, fugit asperiores, harum aut sit beatae ad voluptas! Necessitatibus nam quas vel corrupti
+                alias?</p>
+            <p>Reprehenderit reiciendis expedita quo aliquam. Ipsa amet ab optio laborum voluptate, doloribus similique
+                soluta architecto cupiditate sunt sint eos delectus fugiat, dolorum nihil, quod nesciunt pariatur?
+                Itaque illum ad odit.</p>
+            <p>Explicabo optio odit aut, quasi commodi voluptatum ut quia totam obcaecati voluptas reprehenderit placeat
+                maxime eveniet! Sit rerum voluptate quo in fuga minus. Magni accusamus quasi officia quo explicabo
+                tempore.</p>
+            <p>Consequatur corporis modi quam repellendus ut perferendis perspiciatis rerum sint pariatur excepturi quae
+                tempora natus expedita molestias dolor quos architecto vero, veritatis tempore mollitia unde
+                consequuntur esse laboriosam! Aliquam, ullam.</p>
+            <p>Consequuntur quos facilis iure unde reiciendis? Ullam sapiente omnis incidunt a vero rem dolore enim
+                pariatur labore. Illum sint quia, sapiente dolor cum nulla nam, asperiores amet quam blanditiis itaque.
+            </p>
+            <p>Veniam soluta ipsa nesciunt doloribus iusto aspernatur nam fugit quisquam dolor consectetur animi
+                delectus laboriosam harum, nemo dolores cumque inventore est. Nobis omnis assumenda, commodi explicabo
+                facere accusamus ad unde?</p>
+            <p>Dolorum molestiae, non obcaecati magni qui similique commodi fuga delectus repudiandae voluptatibus
+                placeat! Mollitia doloremque recusandae eum, eveniet iure eius quaerat earum et amet maiores, fugiat
+                dolore adipisci assumenda exercitationem.</p>
+            <p>Perferendis recusandae eos aut fugit illo, quibusdam incidunt veniam rerum voluptate numquam molestiae
+                totam pariatur, dignissimos possimus aliquid delectus blanditiis sed aspernatur a ipsum cupiditate.
+                Architecto iste odit sunt hic!</p>
+            <p>Ex asperiores excepturi, eum recusandae similique vero? Modi delectus adipisci iure fuga? Earum delectus
+                consequuntur odio possimus mollitia eos facilis aliquam consequatur voluptate dolorem velit, quam minus
+                ea id? Architecto!</p>
+            <p>Corrupti voluptatem consequatur sed iste tenetur neque molestiae mollitia ad dolore quisquam laboriosam,
+                explicabo dolorum, eos repudiandae, molestias est in quia et? Odio doloribus nam id, nemo ut eaque eius.
+            </p>
+            <p>Sint iure explicabo, dolores non aperiam provident beatae deleniti earum, quasi nesciunt repellat!
+                Tenetur ut similique id adipisci, quia sequi pariatur dolorum animi mollitia, ipsa ipsam. Excepturi
+                facere optio doloribus!</p>
+            <p>Minima, expedita. Deleniti perferendis voluptatum, aspernatur, alias ducimus nam officiis ipsum saepe
+                similique optio adipisci, at ut asperiores nesciunt cumque minima et ipsa ad exercitationem. Assumenda
+                libero suscipit ut fugit?</p>
+            <p>Explicabo, fugit quos molestiae officiis voluptatem eos! Laudantium vitae, explicabo eius neque obcaecati
+                amet aliquid voluptatibus fuga repellendus asperiores natus cumque, eveniet modi, commodi aut! Soluta
+                maiores saepe repellat molestias.</p>
+            <p>Aspernatur rerum voluptatem aliquam? Nam eveniet, temporibus quos corrupti perferendis nostrum quam
+                aliquid voluptates soluta enim quidem quia culpa voluptatum ut! Odit id cum libero incidunt ad maxime,
+                saepe molestias!</p>
+            <p>Mollitia voluptates, doloremque cumque odio veniam, consectetur cupiditate modi dignissimos rerum
+                perspiciatis quos saepe excepturi, nesciunt quod vel neque porro officia aspernatur soluta nihil vero
+                temporibus quibusdam nulla doloribus! Magni.</p>
+            <p>Repudiandae et qui sunt ex, rerum placeat quae? Ducimus officiis est nisi commodi consequuntur provident
+                quidem nam ullam debitis officia perspiciatis quasi voluptates unde, eum ipsum impedit! Modi, itaque
+                fugit?</p>
+            <p>Ex nostrum quo repellendus nisi quisquam aperiam officia numquam aliquid esse quibusdam eos eveniet, illo
+                impedit iure consequatur modi aut dicta ullam amet excepturi sunt corporis quas. Mollitia, natus
+                ratione?</p>
         </div>
     </section>
     <!--STOP Section About  -->
+    <!-- Main -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Orange</h4>
+            <p class="card-text">Price: $0.5</p>
+            <a id="orange" href="#" data-bs-toggle="modal" data-bs-target="#modalForm" data-name="Orange"
+              data-description="Orange show details" data-price="0.5" class="add-to-cart btn btn-primary">View more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top"
+            src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg"
+            alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Banana</h4>
+            <p class="card-text">Price: $1.22</p>
+            <a id="banana" href="#" data-bs-toggle="modal" data-bs-target="#modalForm" data-name="Banana"
+              data-description="Banana show details" data-price="1.22" class="add-to-cart btn btn-primary">View more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg"
+            alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Lemon</h4>
+            <p class="card-text">Price: $5</p>
+            <a id="lemon" href="#" data-bs-toggle="modal" data-bs-target="#modalForm" data-name="Lemon"
+              data-description="Lemon show details" data-price="5" class="add-to-cart btn btn-primary">View more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="titleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="titleModalLabel">Bootstrap 5 Modal </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Price: <span id="price"></span></p>
+          <p>Description: <span id="description"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
     <!--START Section Validation  -->
     <section id="sec-contact">
         <div class="conatiner">
@@ -135,19 +280,20 @@
                                 <h3>Formular de inregistrare</h3>
                                 <p>Va rugam sa completati datele de mai jos.</p>
                                 <form class="requires-validation" novalidate>
-        
+
                                     <div class="col-md-12">
                                         <input class="form-control" type="text" name="name" placeholder="Nume" required>
                                         <div class="valid-feedback">Campul Nume este valid!</div>
                                         <div class="invalid-feedback">Campul Nume trebuie completat corect!</div>
                                     </div>
-        
+
                                     <div class="col-md-12">
-                                        <input class="form-control" type="email" name="email" placeholder="Email" required>
+                                        <input class="form-control" type="email" name="email" placeholder="Email"
+                                            required>
                                         <div class="valid-feedback">Campul Email este valid!</div>
                                         <div class="invalid-feedback">Campul Email trebuie completat corect!</div>
                                     </div>
-        
+
                                     <div class="col-md-12">
                                         <select name="jdorit" class="form-select mt-3" required>
                                             <option selected disabled value="">Job dorit</option>
@@ -158,43 +304,46 @@
                                         <div class="valid-feedback">Campul Job dorit este valid!</div>
                                         <div class="invalid-feedback">Va rugam selectati o optiune!</div>
                                     </div>
-        
-        
+
+
                                     <div class="col-md-12">
                                         <input class="form-control" type="password" name="password" placeholder="Parola"
                                             required>
                                         <div class="valid-feedback">Campul Parola este valid!</div>
                                         <div class="invalid-feedback">Campul Parola este obligatoriu!</div>
                                     </div>
-        
-        
+
+
                                     <div class="col-md-12 mt-3">
                                         <label class="mb-3 mr-1" for="gender">Sex: </label>
-        
+
                                         <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off"
                                             required>
                                         <label class="btn btn-sm btn-outline-secondary" for="male">Masculin</label>
-        
-                                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off"
-                                            required>
+
+                                        <input type="radio" class="btn-check" name="gender" id="female"
+                                            autocomplete="off" required>
                                         <label class="btn btn-sm btn-outline-secondary" for="female">Feminin</label>
-        
-                                        <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off"
-                                            required>
+
+                                        <input type="radio" class="btn-check" name="gender" id="secret"
+                                            autocomplete="off" required>
                                         <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
                                         <div class="valid-feedback mv-up">Campul Sex este valid!</div>
                                         <div class="invalid-feedback mv-up">Va rugam selectati o optiune!</div>
                                     </div>
-        
+
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
                                         <label class="form-check-label">Confirm ca datele sunt corecte</label>
-                                        <div class="invalid-feedback">Va rugam sa confirmati ca datele sunt corecte!</div>
+                                        <div class="invalid-feedback">Va rugam sa confirmati ca datele sunt corecte!
+                                        </div>
                                     </div>
-        
-        
+
+
                                     <div class="form-button mt-3">
-                                        <button id="submit" type="submit" class="btn btn-primary">Inregistreaza-te</button>
+                                        <button id="submit" type="submit"
+                                            class="btn btn-primary">Inregistreaza-te</button>
                                     </div>
                                 </form>
                             </div>
@@ -202,17 +351,71 @@
                     </div>
                 </div>
             </div>
-        
-        
+
+
         </div>
     </section>
     <!--STOP Section Validation  -->
     <div className="scroll-to-top">
         <button onclick="topFunction()" id="myBtn" title="Go to top">口交</button>
-    
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./assets/js/main-min.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/main-min.js"></script>
+        <script type="text/javascript">
+            // set cookie according to you
+            var cookieName= "CodingStatus";
+            var cookieValue="Coding Tutorials";
+            var cookieExpireDays= 30;
+            // when users click accept button
+            let acceptCookie= document.getElementById("acceptCookie");
+            acceptCookie.onclick= function(){
+                createCookie(cookieName, cookieValue, cookieExpireDays);
+            }
+            // function to set cookie in web browser
+             let createCookie= function(cookieName, cookieValue, cookieExpireDays){
+              let currentDate = new Date();
+              currentDate.setTime(currentDate.getTime() + (cookieExpireDays*24*60*60*1000));
+              let expires = "expires=" + currentDate.toGMTString();
+              document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+              if(document.cookie){
+                document.getElementById("cookiePopup").style.display = "none";
+              }else{
+                alert("Unable to set cookie. Please allow all cookies site from cookie setting of your browser");
+              }
+             }
+            // get cookie from the web browser
+            let getCookie= function(cookieName){
+              let name = cookieName + "=";
+              let decodedCookie = decodeURIComponent(document.cookie);
+              let ca = decodedCookie.split(';');
+              for(let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+                }
+              }
+              return "";
+            }
+            // check cookie is set or not
+            let checkCookie= function(){
+                let check=getCookie(cookieName);
+                if(check==""){
+                    document.getElementById("cookiePopup").style.display = "block";
+                }else{
+                    
+                    document.getElementById("cookiePopup").style.display = "none";
+                }
+            }
+            checkCookie();
+            </script>
 </body>
+
 </html>
