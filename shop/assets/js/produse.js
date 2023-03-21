@@ -77,6 +77,7 @@ async function listProducts(products) {
                 <h4 class="card-title">${product.name} ${product.category}</h4>
                 <p class="text-muted">Starting from ${product.price}</p>
                 <a target='_blank' class="btn btn-outline-primary btn-sm" href="${product.product_link}" data-abc="true">View Products</a>
+                <a href="#" data-id ="${product.id} data-name="${product.name}" data-price="${product.price}" class="add-to-cart btn btn-primary">Add to cart</a>
             </div>
         </div>
     </div>

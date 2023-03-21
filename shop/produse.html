@@ -34,41 +34,7 @@
         <h1>Demo Header</h1>
 
     </div>
-    <nav id="navbar_top" class="navbar  navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="assets/img/logo.svg" height="28" alt="Logo">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link">Acasa</a>
-                    <a href="index.html#sec-about" class="nav-item nav-link">Despre</a>
-                    <a href="index.html#sec-products" class="nav-item nav-link">Produse Noi</a>
-                    <a href="produse.html" class="nav-item nav-link active">Produse</a>
-                    <a href="index.html#sec-contact" class="nav-item nav-link">Contact</a>
-                
-
-
-                </div>
-                <button onclick="myFunction()">🌯 </button>
-                <button class="g-recaptcha" 
-                data-sitekey="reCAPTCHA_site_key" 
-                data-callback='onSubmit' 
-                data-action='submit'>Submit</button>
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </nav>
-
+    <section w3-include-html="navbar.html"> </section>
 
     <!-- STOP Section Navbar -->
    <section class="section">
@@ -94,7 +60,11 @@
         </div>
     </div>
 </section>
+
 <div id="loader" class="lds-dual-ring hidden overlay"></div>
+ <!-- footer  -->
+ <section w3-include-html="footer.html"> </section>
+ <!-- footer stop -->
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"
 integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -103,6 +73,13 @@ crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  
  <script src="./assets/js/produse.js"></script>
+ <script src="./assets/js/cart.js"></script>
+
+ <script src="./dev/js/include.js"></script>
+ <script>
+$('#produse').addClass('active')
+
+ </script>
 
 
 </body>

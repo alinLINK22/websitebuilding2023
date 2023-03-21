@@ -33,40 +33,7 @@
         <h1>Demo Header</h1>
 
     </div>
-    <nav id="navbar_top" class="navbar  navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="assets/img/logo.svg" height="28" alt="Logo">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#sec-home" class="nav-item nav-link active">Acasa</a>
-                    <a href="#sec-about" class="nav-item nav-link">Despre</a>
-                    <a href="#sec-products" class="nav-item nav-link">Produse Noi</a>
-                    <a href="produse.html" class="nav-item nav-link">Produse</a>
-                    <a href="#sec-contact" class="nav-item nav-link">Contact</a>
-                
-
-
-                </div>
-                <button onclick="myFunction()">🌯 </button>
-                <button class="g-recaptcha" 
-                data-sitekey="reCAPTCHA_site_key" 
-                data-callback='onSubmit' 
-                data-action='submit'>Submit</button>
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </nav>
+   <section w3-include-html="navbar.html"> </section>
 
 
     <!-- STOP Section Navbar -->
@@ -404,6 +371,9 @@
         </div>
     </section>
     <!--STOP Section Validation  -->
+    <!-- footer  -->
+    <section w3-include-html="footer.html"> </section>
+    <!-- footer stop -->
     <div className="scroll-to-top">
         <button onclick="topFunction()" id="myBtn" title="Go to top">口交</button>
 
